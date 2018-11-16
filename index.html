@@ -3,7 +3,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {margin:0;}
+p {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+animation-delay: 3s;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+}
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
 .navbar {
   overflow: hidden;
   text-shadow: 1px 1px 0px #444;
@@ -41,7 +71,7 @@ body {margin:0;}
 <div class="main" align="center">
   <h1><u>Hello, And Welcome To <i>Ben Benson's</i>Website</u></h1>
   <h2></h2>
-  
+  <p></p>
 
 </div>
 
