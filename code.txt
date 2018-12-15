@@ -1,0 +1,20 @@
+[Series 1 Uploads]
+path = "/home/ubuntu/.series 1/uploads"
+create mask = 664 # IME this doesn't workforce create mode = 664 #
+security mask = 664 # this works to mask existing upload
+force security mode = 664
+
+force directory mode = 0000
+directory mask = 2775
+force directory mode = 2775
+directory security mask = 2775
+force directory security mode = 2775
+
+force group = ubuntu
+force user = ubuntu
+available = yes
+valid users = ubuntu
+read only = no
+browseable = yes
+public = yes
+writable = yes
