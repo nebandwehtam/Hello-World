@@ -17,9 +17,9 @@
             var name = prompt("Please enter your name! - this is for a JS demo.");
             if (hourNow > 21) {
                 greeting = "Good night, ";
+                $("body.main").hide();
             } else if (hourNow > 18) {
                 greeting = "Good Evening, ";
-                $("body.main").fadeOut();
             } else if (hourNow > 12) {
                 greeting = "Good Afternoon, ";
             } else if (hourNow > 0) {
