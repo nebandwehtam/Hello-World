@@ -131,7 +131,9 @@ d {
             var greeting;
             var name = prompt("Please enter your name! - this i for a JS demo.");
 
-            if (hourNow > 18) {
+            if (hourNow > 21) {
+                greeting = "Good night, "
+            } else if (hourNow > 18) {
                 greeting = "Good Evening, ";
             } else if (hourNow > 12) {
                 greeting = "Good Afternoon, ";
