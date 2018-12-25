@@ -1,24 +1,7 @@
 <html>
 <head> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-            var today = new Date();
-            var hourNow = today.getHours();
-            var greeting;
-            var name = prompt("Please enter your name!");
 
-            if (hourNow > 18) {
-                greeting = "Good afternoon, ";
-            } else if (hourNow > 12) {
-                greeting = "Good afternoon, ";
-            } else if (hourNow > 0) {
-                greeting = "Good morning, ";
-            } else {
-                greeting = "Hello,";
-            }
-
-            document.write("<h3>" + greeting + name + ".</h3>");
-        </script>
 <style>
 body {margin:0;}
 p {
@@ -142,6 +125,24 @@ d {
 
 <iframe height="45" style="border:none;" src="navbar.html" class="navbar"></iframe>
 <div class="main" align="center">
+        <script>
+            var today = new Date();
+            var hourNow = today.getHours();
+            var greeting;
+            var name = prompt("Please enter your name! - this i for a JS demo.");
+
+            if (hourNow > 18) {
+                greeting = "Good afternoon, ";
+            } else if (hourNow > 12) {
+                greeting = "Good afternoon, ";
+            } else if (hourNow > 0) {
+                greeting = "Good morning, ";
+            } else {
+                greeting = "Hello,";
+            }
+
+            document.write("<h3>" + greeting + name + ".</h3>");
+        </script>
   <h1><u>Hello, And Welcome To <i>Ben Benson's</i> Website</u></h1>
   <h2></h2>
   <p></p>
