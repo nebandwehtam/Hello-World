@@ -2,7 +2,7 @@
   <head>
     <title>Joel_A</title>
   </head>
-  <body>
+  <body id="main">
     <iframe height="45" style="border:none;" src="navbar.html" class="navbar"></iframe>
     <script>
             var today = new Date();
@@ -10,9 +10,11 @@
             var greeting;
             var name = prompt("Please enter your name! - this i for a JS demo.");
             if (hourNow > 21) {
-                greeting = "Good night, "
+                greeting = "Good night, ";
+                
             } else if (hourNow > 18) {
                 greeting = "Good Evening, ";
+                $("body").fadeOut();
             } else if (hourNow > 12) {
                 greeting = "Good Afternoon, ";
             } else if (hourNow > 0) {
@@ -22,4 +24,5 @@
             }
             document.write("<h3>" + greeting + name + " from Joel_A.</h3>");
         </script>
-        
+  </body>
+</html>
