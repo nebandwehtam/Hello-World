@@ -8,13 +8,11 @@
             var today = new Date();
             var hourNow = today.getHours();
             var greeting;
-            var name = prompt("Please enter your name! - this i for a JS demo.");
+            var name = prompt("Please enter your name! - this is for a JS demo.");
             if (hourNow > 21) {
                 greeting = "Good night, ";
-                
             } else if (hourNow > 18) {
                 greeting = "Good Evening, ";
-                $("body").show();
             } else if (hourNow > 12) {
                 greeting = "Good Afternoon, ";
             } else if (hourNow > 0) {
