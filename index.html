@@ -1,6 +1,24 @@
 <html>
 <head> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+            var today = new Date();
+            var hourNow = today.getHours();
+            var greeting;
+            var name = prompt("Please enter your name!");
+
+            if (hourNow > 18) {
+                greeting = "Good afternoon, ";
+            } else if (hourNow > 12) {
+                greeting = "Good afternoon, ";
+            } else if (hourNow > 0) {
+                greeting = "Good morning, ";
+            } else {
+                greeting = "Hello,";
+            }
+
+            document.write("<h3>" + greeting + name + ".</h3>");
+        </script>
 <style>
 body {margin:0;}
 p {
